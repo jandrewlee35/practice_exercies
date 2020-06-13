@@ -77,7 +77,42 @@ print("---")
 print("#6")
 for x in range(3):
     print("***")
+print('')
+
+for x in range(3):
+    for x in range(3):
+        print('*', end='')
+    print()
 print("---")
 
 
 print("#7")
+list_of_ten = [1,2,3,4,5,6,7,8,9,0]
+total = 0
+for i in list_of_ten:
+    total += list_of_ten[i]
+print(total)
+print("---")
+
+
+print("#8")
+shopping_cart = {"item1" : "bacon", "item2" : "cheese", "item3" : "eggs", "item4" : "milk", "item5" : "fruits"}
+print(shopping_cart.items())
+print(shopping_cart.keys())
+print(shopping_cart.values())
+print(shopping_cart["item1"])
+print("---")
+
+
+print("#9")
+city = input("enter your city\n")
+print(city)
+print("---")
+
+
+print("#10")
+def summation(*args):
+    for element in args:
+        print(element)
+summation("ready", "set", "go")
+print("---")
